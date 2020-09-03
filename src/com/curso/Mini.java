@@ -1,12 +1,15 @@
 package com.curso;
 
-public class CocheMovil extends Coche {
+public class Mini extends Coche {
 
-    public CocheMovil(boolean started) {
-        super(started);
+    protected final String brand ="Mini";
+
+
+    public Mini(int horsepower) {
+        super(horsepower);
     }
 
-    public CocheMovil() {
+    public Mini() {
     }
 
     @Override

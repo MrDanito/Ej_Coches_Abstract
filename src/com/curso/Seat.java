@@ -1,12 +1,14 @@
 package com.curso;
 
-public class CocheBoton extends Coche {
+public class Seat extends Coche {
 
-    public CocheBoton(boolean started) {
-        super(started);
+    protected final String brand ="Seat";
+
+    public Seat(int horsepower) {
+        super(horsepower);
     }
 
-    public CocheBoton() {
+    public Seat() {
     }
 
     @Override

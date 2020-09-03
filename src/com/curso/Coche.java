@@ -2,13 +2,18 @@ package com.curso;
 
 public abstract class Coche {
 
-    protected boolean started;
+    protected boolean started = false;
+    protected int horsepower;
 
-    public Coche(boolean started) {
-        this.started = started;
+    public Coche(int horsepower) {
+        this.horsepower = horsepower;
     }
 
     public Coche() {
+    }
+
+    public int getHorsepower() {
+        return horsepower;
     }
 
     public boolean isStarted(){
@@ -27,7 +32,11 @@ public abstract class Coche {
             System.out.println("No se puede conducir, primero hay que arrancar el coche.");
         }
 
+    }
 
+    public void brake (){
+
+        System.out.println("El coche esta frenando");
 
     }
 

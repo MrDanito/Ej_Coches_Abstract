@@ -1,12 +1,15 @@
 package com.curso;
 
-public class CocheLlave extends Coche {
+public class Mercedes extends Coche {
 
-    public CocheLlave(boolean started) {
-        super(started);
+    protected final String brand ="Mercedes";
+
+
+    public Mercedes(int horsepower) {
+        super(horsepower);
     }
 
-    public CocheLlave() {
+    public Mercedes() {
     }
 
     @Override

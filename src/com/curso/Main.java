@@ -4,30 +4,36 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CocheBoton cb1 = new CocheBoton(false);
+        Seat seat = new Seat(100);
 
-        cb1.drive();
-        cb1.start();
-        cb1.drive();
-
-        //////////
-        System.out.println();
-        //////////
-
-        CocheLlave cc1= new CocheLlave(true);
-
-        cc1.drive();
-
+        seat.drive();
+        seat.start();
+        seat.drive();
+        System.out.println("El coche tiene: " + seat.horsepower + " cv de potencia.");
 
         //////////
         System.out.println();
         //////////
 
-        CocheMovil cm1 = new CocheMovil();
+        Mercedes mercedes= new Mercedes(190);
 
-        cm1.drive();
-        cm1.start();
-        cm1.drive();
+        mercedes.drive();
+        System.out.println("El coche tiene: " + mercedes.horsepower + " cv de potencia.");
+
+
+
+        //////////
+        System.out.println();
+        //////////
+
+        Mini mini = new Mini(150);
+
+        mini.drive();
+        mini.start();
+        mini.drive();
+        mini.brake();
+        System.out.println("El coche tiene: " + mini.horsepower + " cv de potencia.");
+
 
     }
 }
