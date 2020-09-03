@@ -16,7 +16,7 @@ public abstract class Coche {
         return horsepower;
     }
 
-    public boolean isStarted(){
+    public boolean isStarted() {
 
         return started;
 
@@ -24,17 +24,17 @@ public abstract class Coche {
 
     public abstract void start();
 
-    public void drive(){
+    public void drive() {
 
-        if (isStarted()){
+        if (isStarted()) {
             System.out.println("El coche se puede conducir.");
-        }else {
+        } else {
             System.out.println("No se puede conducir, primero hay que arrancar el coche.");
         }
 
     }
 
-    public void brake (){
+    public void brake() {
 
         System.out.println("El coche esta frenando");
 

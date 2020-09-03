@@ -2,7 +2,7 @@ package com.curso;
 
 public class Mini extends Coche {
 
-    protected final String brand ="Mini";
+    protected final String brand = "Mini";
 
 
     public Mini(int horsepower) {
@@ -17,7 +17,7 @@ public class Mini extends Coche {
         startWithMobile();
     }
 
-    public void startWithMobile(){
+    public void startWithMobile() {
         System.out.println("Arranco con el móvil.");
         started = true;
     }

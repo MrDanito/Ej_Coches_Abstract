@@ -2,7 +2,7 @@ package com.curso;
 
 public class Seat extends Coche {
 
-    protected final String brand ="Seat";
+    protected final String brand = "Seat";
 
     public Seat(int horsepower) {
         super(horsepower);
@@ -17,8 +17,8 @@ public class Seat extends Coche {
     }
 
 
-    public void startWithButton(){
-        System.out.println("Arranco con un boton");
+    public void startWithButton() {
+        System.out.println("Arranco con un botón");
         started = true;
     }
 

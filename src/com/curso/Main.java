@@ -15,11 +15,10 @@ public class Main {
         System.out.println();
         //////////
 
-        Mercedes mercedes= new Mercedes(190);
+        Mercedes mercedes = new Mercedes(190);
 
         mercedes.drive();
         System.out.println("El coche tiene: " + mercedes.horsepower + " cv de potencia.");
-
 
 
         //////////

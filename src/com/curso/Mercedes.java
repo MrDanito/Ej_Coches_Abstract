@@ -2,7 +2,7 @@ package com.curso;
 
 public class Mercedes extends Coche {
 
-    protected final String brand ="Mercedes";
+    protected final String brand = "Mercedes";
 
 
     public Mercedes(int horsepower) {
@@ -17,8 +17,8 @@ public class Mercedes extends Coche {
         startWithKey();
     }
 
-    public void startWithKey(){
-        System.out.println("Arranco con un boton");
+    public void startWithKey() {
+        System.out.println("Arranco con una llave");
         started = true;
     }
 
