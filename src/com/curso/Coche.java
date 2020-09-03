@@ -1,6 +1,6 @@
 package com.curso;
 
-public abstract class Coche {
+public abstract class Coche implements IMusicable {
 
     protected boolean started = false;
     protected int horsepower;
@@ -81,4 +81,18 @@ public abstract class Coche {
 
     }
 
+    @Override
+    public void iniciarReproduccion() {
+
+        System.out.println("Reproduciendo música.");
+
+    }
+
+    @Override
+    public void pararReproduccion() {
+
+        System.out.println("Se ha parado la música.");
+
+
+    }
 }

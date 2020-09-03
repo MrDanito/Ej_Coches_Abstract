@@ -1,8 +1,12 @@
 package com.curso;
 
+import com.curso.tombola.Tombola;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        Tombola tombola = new Tombola();
 
         Seat seat = new Seat("Rojo", 100);
 
@@ -10,6 +14,7 @@ public class Main {
         seat.start();
         seat.drive();
         System.out.println("El coche tiene: " + seat.horsepower + " cv de potencia.");
+        seat.stop();
 
         //////////
         System.out.println("--------------------");
@@ -19,7 +24,7 @@ public class Main {
 
         mercedes.drive();
         System.out.println("El coche tiene: " + mercedes.horsepower + " cv de potencia.");
-
+        mercedes.iniciarReproduccion();
 
         //////////
         System.out.println("--------------------");
@@ -37,6 +42,14 @@ public class Main {
         mini.brake();
         System.out.println("Velocidad: " + mini.getVel());
         System.out.println("El coche tiene: " + mini.horsepower + " cv de potencia.");
+
+        //////////
+        System.out.println("--------------------");
+        //////////
+
+        IMusicable musicable;
+        musicable = tombola.sortearElemento();
+        musicable.iniciarReproduccion();
 
 
     }
