@@ -4,18 +4,34 @@ public abstract class Coche {
 
     protected boolean started = false;
     protected int horsepower;
+    protected int vel = 0;
+    protected String brand;
+    protected String color;
 
-    public Coche(int horsepower) {
+    //Constructor
+    public Coche(String brand, String color, int horsepower) {
         this.horsepower = horsepower;
+        this.brand = brand;
+        this.color = color;
     }
 
     public Coche() {
     }
 
+    //Getters
     public int getHorsepower() {
         return horsepower;
     }
 
+    public int getVel() {
+        return vel;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    //Metodos
     public boolean isStarted() {
 
         return started;
@@ -23,6 +39,8 @@ public abstract class Coche {
     }
 
     public abstract void start();
+
+    public abstract void stop();
 
     public void drive() {
 
@@ -34,9 +52,32 @@ public abstract class Coche {
 
     }
 
+    public void acelerate() {
+
+        if (isStarted()) {
+
+            vel++;
+            System.out.println("El coche esta acelerando.");
+
+        } else {
+
+            System.out.println("El coche tiene que estar arrancado para poder acelerar.");
+
+        }
+
+    }
+
     public void brake() {
 
-        System.out.println("El coche esta frenando");
+        if (vel > 0) {
+
+            vel--;
+            System.out.println("El coche esta frenando");
+
+        } else {
+            System.out.println("El coche esta frenado.");
+        }
+
 
     }
 
